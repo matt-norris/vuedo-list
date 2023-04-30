@@ -68,16 +68,23 @@ h2 {
 }
 
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 li {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
 }
+
+li:hover {
+  background-color: #f2f2f2;
+}
+
 
 .completed {
   text-decoration: line-through;
@@ -101,6 +108,29 @@ form input[type="text"] {
   border: 1px solid #ccc;
 }
 
+form input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
 form button {
   padding: 5px 10px;
   border-radius: 5px;
@@ -114,5 +144,7 @@ form button {
 form button:hover {
   background-color: #3e8e41;
 }
-
+body {
+  background-color: #f2f2f2;
+}
 </style>
